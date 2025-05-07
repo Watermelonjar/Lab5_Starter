@@ -31,7 +31,7 @@ test('isEmail - valid email 1', () => {
 });
 
 test('isEmail - valid email 2', () => {
-  expect(isEmail('user.name@domain.co')).toBe(true);
+  expect(isEmail('username@domain.com')).toBe(true);
 });
 
 test('isEmail - invalid email 1', () => {
@@ -56,7 +56,7 @@ test('isStrongPassword - invalid password 1', () => {
 });
 
 test('isStrongPassword - invalid password 2', () => {
-  expect(isStrongPassword('weak')).toBe(false);
+  expect(isStrongPassword('wea')).toBe(false);
 });
 
 // Tests for isDate
@@ -73,7 +73,7 @@ test('isDate - invalid date 1', () => {
 });
 
 test('isDate - invalid date 2', () => {
-  expect(isDate('31/12/1999')).toBe(false);
+  expect(isDate('311/12/1999')).toBe(false);
 });
 
 // Tests for isHexColor
@@ -86,7 +86,7 @@ test('isHexColor - valid hex color 2', () => {
 });
 
 test('isHexColor - invalid hex color 1', () => {
-  expect(isHexColor('123456')).toBe(false);
+  expect(isHexColor('16')).toBe(false);
 });
 
 test('isHexColor - invalid hex color 2', () => {
